@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>FlatLinker</title>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top navbar-default">
+        <div class="container" id="navbar-container">
+            <ul class="nav navbar-nav navbar-left lead">
+                <li><a class="brand-logo" href="#"></a></li>
+                <li><a class="hidden-xs" href="#">FlatLinker</a></li>
+            </ul>
+            <div id="navbar-scrollspy" class="hidden-sm hidden-xs">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">default</a></li>
+                    <!--dropdown menu-->
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="drop-down-menu" aria-haspopup="true" aria-expanded="false" role="button">
+                            default<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="drop-down-menu">
+                            <li><a href="#">default</a></li>
+                            <li><a href="#">default</a></li>
+                            <li><a href="#">default</a></li>
+                            <li><a href="#">default</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a style="padding-right: 5px" href="#">Sign In</a>
+                    </li>
+                    <li style="padding-top: 15px; padding-bottom: 15px">
+                        <span>or</span>
+                    </li>
+                    <li>
+                        <a style="padding-left: 5px" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="for-carousel" id="home">
+        <div id="my-slider" class="row carousel slide" data-ride="carousel">
+            <!--dots indicator-->
+            <ol class="carousel-indicators">
+                <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#my-slider" data-slide-to="1"></li>
+                <li data-target="#my-slider" data-slide-to="2"></li>
+                <li data-target="#my-slider" data-slide-to="3"></li>
+            </ol>
+            <!--banner slides-->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="https://dummyimage.com/1920x768/000000/ffffff.png&text=banner">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="https://dummyimage.com/1920x768/000000/ffffff.png&text=banner">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="https://dummyimage.com/1920x768/000000/ffffff.png&text=banner">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="https://dummyimage.com/1920x768/000000/ffffff.png&text=banner">
+                </div>
+            </div>
+            <!--left and right buttons-->
+            <a class="left carousel-control hidden" id="carousel-prev" href="#my-slider" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control hidden" id="carousel-next" href="#my-slider" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
