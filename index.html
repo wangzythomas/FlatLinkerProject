@@ -43,7 +43,29 @@
         </div>
     </div>
 
-    <div class="for-carousel" id="home">
+    <div class="search-bar">
+        <form action="" method="">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" id="keyword" placeholder="Search for residence...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdown-menu">
+                        <span class="glyphicon glyphicon-search"></span>
+                            &nbsp;Choose a date
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">default</a></li>
+                        <li><a href="#">default</a></li>
+                        <li><a href="#">default</a></li>
+                        <li><a href="#">default</a></li>
+                    </ul>
+
+                    <button class="btn btn-success">SEARCH</button>
+                </span>
+            </div>
+        </form>
+    </div>
+    <div class="for-carousel" id="show-arrow">
         <div id="my-slider" class="row carousel slide" data-ride="carousel">
             <!--dots indicator-->
             <ol class="carousel-indicators">
@@ -55,27 +77,40 @@
             <!--banner slides-->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="img-responsive" src="https://dummyimage.com/1920x768/000000/ffffff.png&text=banner">
+                    <img class="img-responsive" src="https://dummyimage.com/1920x768/FFFFFF/888888.png&text=b">
+                    <div class="carousel-caption">
+                        <p class="img-caption collapse navbar-collapse">King's College London</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <img class="img-responsive" src="https://dummyimage.com/1920x768/000000/ffffff.png&text=banner">
+                    <img class="img-responsive" src="https://dummyimage.com/1920x768/FFFFFF/888888.png&text=b">
+                    <div class="carousel-caption">
+                        <p class="img-caption collapse navbar-collapse">University College London</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <img class="img-responsive" src="https://dummyimage.com/1920x768/000000/ffffff.png&text=banner">
+                    <img class="img-responsive" src="https://dummyimage.com/1920x768/FFFFFF/888888.png&text=b">
+                    <div class="carousel-caption">
+                        <p class="img-caption collapse navbar-collapse">Imperial College London</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <img class="img-responsive" src="https://dummyimage.com/1920x768/000000/ffffff.png&text=banner">
+                    <img class="img-responsive" src="https://dummyimage.com/1920x768/FFFFFF/888888.png&text=b">
+                    <div class="carousel-caption">
+                        <p class="img-caption collapse navbar-collapse">University of Arts London</p>
+                    </div>
                 </div>
             </div>
             <!--left and right buttons-->
-            <a class="left carousel-control hidden" id="carousel-prev" href="#my-slider" role="button" data-slide="prev">
+            <a class="left carousel-control carousel-arrow" href="#my-slider" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             </a>
-            <a class="right carousel-control hidden" id="carousel-next" href="#my-slider" role="button" data-slide="next">
+            <a class="right carousel-control carousel-arrow" href="#my-slider" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             </a>
         </div>
     </div>
+
 
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>

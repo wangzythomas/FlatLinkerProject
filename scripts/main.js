@@ -1,3 +1,13 @@
 // carousel control
-var a = $('#carousel-prev').text();
-console.log(a);
+var a = $('.carousel-arrow');
+
+var showArrow = $('#show-arrow');
+showArrow.on('mouseenter', function() {
+    a.show();
+})
+
+showArrow.on('mouseleave', function() {
+    if (a.is(':visible')) {
+        a.hide();
+    }
+})
