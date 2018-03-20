@@ -8,7 +8,7 @@
     <title>FlatLinker</title>
 </head>
 <body>
-    <div class="navbar navbar-fixed-top navbar-default">
+    <div class="navbar navbar-default">
         <div class="container" id="navbar-container">
             <ul class="nav navbar-nav navbar-left lead">
                 <li><a class="brand-logo" href="#"></a></li>
@@ -43,12 +43,61 @@
         </div>
     </div>
 
-    <div class="search-bar">
+    <div class="banner" style="text-align: center;">
+
+
+        <div class="for-carousel" id="show-arrow">
+            <div id="my-slider" class="row carousel slide" data-ride="carousel">
+                <!--dots indicator-->
+                <ol class="carousel-indicators">
+                    <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#my-slider" data-slide-to="1"></li>
+                    <li data-target="#my-slider" data-slide-to="2"></li>
+                    <li data-target="#my-slider" data-slide-to="3"></li>
+                </ol>
+                <!--banner slides-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="https://dummyimage.com/1920x480/DDDDDD/888888.png&text=b">
+                        <div class="carousel-caption hidden-sm">
+                            <p class="img-caption collapse navbar-collapse">King's College London</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://dummyimage.com/1920x480/DDDDDD/888888.png&text=b">
+                        <div class="carousel-caption hidden-sm">
+                            <p class="img-caption collapse navbar-collapse">University College London</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://dummyimage.com/1920x480/DDDDDD/888888.png&text=b">
+                        <div class="carousel-caption hidden-sm">
+                            <p class="img-caption collapse navbar-collapse">Imperial College London</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://dummyimage.com/1920x480/DDDDDD/888888.png&text=b">
+                        <div class="carousel-caption hidden-sm">
+                            <p class="img-caption collapse navbar-collapse">University of Arts London</p>
+                        </div>
+                    </div>
+                </div>
+                <!--left and right buttons-->
+                <a class="left carousel-control carousel-arrow" href="#my-slider" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                </a>
+                <a class="right carousel-control carousel-arrow" href="#my-slider" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container search-bar">
         <form action="" method="">
             <div class="input-group input-group-lg">
                 <input type="text" class="form-control" id="keyword" placeholder="Search for residence...">
                 <span class="input-group-btn">
-                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdown-menu">
+                    <button class="btn btn-default dropdown-toggle hidden-xs" data-toggle="dropdown" id="dropdown-menu">
                         <span class="glyphicon glyphicon-search"></span>
                             &nbsp;Choose a date
                         <span class="caret"></span>
@@ -59,57 +108,109 @@
                         <li><a href="#">default</a></li>
                         <li><a href="#">default</a></li>
                     </ul>
-
-                    <button class="btn btn-success">SEARCH</button>
+                    <button class="btn btn-success search-icon">SEARCH</button>
                 </span>
             </div>
         </form>
     </div>
-    <div class="for-carousel" id="show-arrow">
-        <div id="my-slider" class="row carousel slide" data-ride="carousel">
-            <!--dots indicator-->
-            <ol class="carousel-indicators">
-                <li data-target="#my-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#my-slider" data-slide-to="1"></li>
-                <li data-target="#my-slider" data-slide-to="2"></li>
-                <li data-target="#my-slider" data-slide-to="3"></li>
-            </ol>
-            <!--banner slides-->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="img-responsive" src="https://dummyimage.com/1920x768/FFFFFF/888888.png&text=b">
-                    <div class="carousel-caption">
-                        <p class="img-caption collapse navbar-collapse">King's College London</p>
+    <div class="container releases">
+        <div class="long-term">
+            <h3 >Long-term Releases</h3>
+            <div class="row">
+            <div class="main-photos col-md-2">
+                <img src="https://dummyimage.com/180x120/DDDDDD/888888.png&text=b">
+                <div class="clearfix">
+                    <p class="main-photos-caption">asdasdasdasds</p>
+                    <span class="main-photos-caption"><span class="glyphicon glyphicon-heart-empty"></span> 2345</span>
+                </div>
+            </div>
+            <div class="main-photos clearfix col-md-2">
+                <img src="https://dummyimage.com/180x120/DDDDDD/888888.png&text=b">
+                <div class="container clearfix">
+                    <p class="main-photos-caption">asdasdasdasds</p>
+                    <span class="main-photos-caption"><span class="glyphicon glyphicon-heart-empty"></span> 2345</span>
+                </div>
+            </div>
+            <div class="main-photos clearfix col-md-2">
+                <img src="https://dummyimage.com/180x120/DDDDDD/888888.png&text=b">
+                <div class="container clearfix">
+                    <p class="main-photos-caption">asdasdasdasds</p>
+                    <span class="main-photos-caption"><span class="glyphicon glyphicon-heart-empty"></span> 2345</span>
+                </div>
+            </div>
+            <div class="main-photos clearfix col-md-2">
+                <img src="https://dummyimage.com/180x120/DDDDDD/888888.png&text=b">
+                <div class="container clearfix">
+                    <p class="main-photos-caption">asdasdasdasds</p>
+                    <span class="main-photos-caption"><span class="glyphicon glyphicon-heart-empty"></span> 2345</span>
+                </div>
+            </div>
+            <div class="main-photos clearfix col-md-2">
+                <img src="https://dummyimage.com/180x120/DDDDDD/888888.png&text=b">
+                <div class="container clearfix">
+                    <p class="main-photos-caption">asdasdasdasds</p>
+                    <span class="main-photos-caption"><span class="glyphicon glyphicon-heart-empty"></span> 2345</span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container releases">
+        <div class="long-term">
+            <h3 >Short-term Releases</h3>
+            <div class="row">
+                <div class="main-photos col-md-2">
+                    <img src="https://dummyimage.com/180x120/DDDDDD/888888.png&text=b">
+                    <div class="clearfix">
+                        <p class="main-photos-caption">asdasdasdasds</p>
+                        <span class="main-photos-caption"><span class="glyphicon glyphicon-heart-empty"></span> 2345</span>
                     </div>
                 </div>
-                <div class="item">
-                    <img class="img-responsive" src="https://dummyimage.com/1920x768/FFFFFF/888888.png&text=b">
-                    <div class="carousel-caption">
-                        <p class="img-caption collapse navbar-collapse">University College London</p>
+                <div class="main-photos clearfix col-md-2">
+                    <img src="https://dummyimage.com/180x120/DDDDDD/888888.png&text=b">
+                    <div class="container clearfix">
+                        <p class="main-photos-caption">asdasdasdasds</p>
+                        <span class="main-photos-caption"><span class="glyphicon glyphicon-heart-empty"></span> 2345</span>
                     </div>
                 </div>
-                <div class="item">
-                    <img class="img-responsive" src="https://dummyimage.com/1920x768/FFFFFF/888888.png&text=b">
-                    <div class="carousel-caption">
-                        <p class="img-caption collapse navbar-collapse">Imperial College London</p>
+                <div class="main-photos clearfix col-md-2">
+                    <img src="https://dummyimage.com/180x120/DDDDDD/888888.png&text=b">
+                    <div class="container clearfix">
+                        <p class="main-photos-caption">asdasdasdasds</p>
+                        <span class="main-photos-caption"><span class="glyphicon glyphicon-heart-empty"></span> 2345</span>
                     </div>
                 </div>
-                <div class="item">
-                    <img class="img-responsive" src="https://dummyimage.com/1920x768/FFFFFF/888888.png&text=b">
-                    <div class="carousel-caption">
-                        <p class="img-caption collapse navbar-collapse">University of Arts London</p>
+                <div class="main-photos clearfix col-md-2">
+                    <img src="https://dummyimage.com/180x120/DDDDDD/888888.png&text=b">
+                    <div class="container clearfix">
+                        <p class="main-photos-caption">asdasdasdasds</p>
+                        <span class="main-photos-caption"><span class="glyphicon glyphicon-heart-empty"></span> 2345</span>
+                    </div>
+                </div>
+                <div class="main-photos clearfix col-md-2">
+                    <img src="https://dummyimage.com/180x120/DDDDDD/888888.png&text=b">
+                    <div class="container clearfix">
+                        <p class="main-photos-caption">asdasdasdasds</p>
+                        <span class="main-photos-caption"><span class="glyphicon glyphicon-heart-empty"></span> 2345</span>
                     </div>
                 </div>
             </div>
-            <!--left and right buttons-->
-            <a class="left carousel-control carousel-arrow" href="#my-slider" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            </a>
-            <a class="right carousel-control carousel-arrow" href="#my-slider" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            </a>
         </div>
     </div>
+
+    <div class="contact">
+        <div>
+            contact
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            footer
+        </div>
+    </div>
+
+
 
 
     <script src="scripts/jquery-3.3.1.min.js"></script>

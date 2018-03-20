@@ -12,21 +12,62 @@
 }
 
 .search-bar {
-    position: absolute;
-    top: 520px;
-    margin-left: 300px;
-    margin-right: 300px;
+    /*position: absolute;*/
+    /*top: 30vmax;*/
+    margin-left: 15.5vmax;
+    margin-right: 17vmax;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .for-carousel {
-    position: absolute;
+    /*position: absolute;*/
+    top: 50px;
 }
 
 .carousel-caption {
-    top: 200px;
+    top: 160px;
     font-size: 50px;
 }
 
+#keyword {
+    border-radius: 6px;
+}
+
+.input-group-btn:last-child>.btn {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.banner {
+    top: 50px;
+}
+
+.releases {
+    position: relative;
+    margin-top: 15px;
+}
+
+.main-photos {
+
+    margin-right: 10px;
+}
+
+.main-photos-caption {
+    display: inline-block;
+}
+
+
+.contact{
+    background-color: #EEEEEE;
+    height: 250px;
+    margin-top: 40px;
+}
+.footer {
+    position: relative;
+    background-color: #DDDDDD;
+    height: 350px;
+}
 
 
 
