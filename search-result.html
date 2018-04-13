@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<title>Discover Your Apartment</title>
+</head>
+<body>
+	<div class="navbar navbar-default">
+		<div class="container" id="navbar-container">
+			<ul class="nav navbar-nav navbar-left lead">
+				<li><a class="brand-logo" href="#"></a></li>
+				<li><a class="hidden-xs" href="#">FlatLinker</a></li>
+			</ul>
+
+			<div class="hidden-sm hidden-xs">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<form class="form-inline form-navbar">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-default my-2 my-sm-0" type="submit">Search</button>
+						</form>
+					</li>
+					<li><a href="#">default</a></li>
+					<!--dropdown menu-->
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="drop-down-menu" aria-haspopup="true" aria-expanded="false" role="button">
+							default<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="drop-down-menu">
+							<li><a href="#">default</a></li>
+							<li><a href="#">default</a></li>
+							<li><a href="#">default</a></li>
+							<li><a href="#">default</a></li>
+						</ul>
+					</li>
+					<li>
+						<a style="padding-right: 5px" href="#">Sign In</a>
+					</li>
+					<li style="padding-top: 15px; padding-bottom: 15px">
+						<span>or</span>
+					</li>
+					<li>
+						<a style="padding-left: 5px" href="#">Sign Up</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container main-container">
+		<div class="filter-head">
+			<form id="filterHead">
+				<label for="formSelectItem1">Choose Your School</label>
+				<select class="form-control" id="formSelectItem1">
+					<option>---</option>
+					<option>Birkbeck, University of London</option>
+					<option>Brunel University London</option>
+					<option>City, University of London</option>
+					<option>Goldsmiths, University of London</option>
+					<option>Imperial College London</option>
+					<option>King's College London</option>
+					<option>Kingston University</option>
+					<option>London Metropolitan University</option>
+					<option>London School of Economics</option>
+					<option>London South Bank University</option>
+					<option>Middlesex University</option>
+					<option>Queen Mary University of London</option>
+					<option>Royal Holloway, University of London</option>
+					<option>SOAS, University of London</option>
+					<option>St George's, University of London</option>
+					<option>St Mary's University, Twickenham</option>
+					<option>University College London</option>
+					<option>University of East London</option>
+					<option>University of Greenwich</option>
+					<option>University of Roehampton</option>
+					<option>University of the Arts London</option>
+					<option>University of West London</option>
+					<option>University of Westminster</option>
+					<option>Other</option>
+				</select>
+				<label for="formSelectItem2">Choose Your Field of Study</label>
+				<select class="form-control" id="formSelectItem2">
+					<option>---</option>
+					<option>Arts & Humanities</option>
+					<option>Engineering & Technology</option>
+					<option>Life Sciences & Medicine</option>
+					<option>Natural Sciences</option>
+					<option>Social Sciences & Management</option>
+					<option>Other</option>
+				</select>
+				<label for="formSelectItem3">Room Type Preferred</label>
+				<select class="form-control" id="formSelectItem3">
+					<option>---</option>
+					<option>Non En-Suite Room</option>
+					<option>En-suite Room</option>
+					<option>Studio</option>
+					<option>Flat</option>
+					<option>Shared Flat</option>
+					<option>House</option>
+					<option>Other</option>
+				</select>
+
+				<label for="formSelectItem4" class="form-select-item4">Distance from School</label>
+				<div class="form-select-item-4" id="formSelectItem4">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="formSelectItem41" value="0-2">
+						<label class="form-check-label" for="formSelectItem41">0-2km</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="formSelectItem42" value="2-5">
+						<label class="form-check-label" for="formSelectItem42">2-5km</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="formSelectItem43" value="5-10">
+						<label class="form-check-label" for="formSelectItem43">5-10km</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="formSelectItem44" value="10+">
+						<label class="form-check-label" for="formSelectItem44">more than 10km</label>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+
+			</form>
+
+		</div>
+		<div class="body-main">
+			<div class="filter-left col-md-3 clearfix">
+				<h5>Flatmate Choices</h5>
+				<p class="caption">You can choose your flatmate preference here!</p>
+				<form>
+					<p class="filter-caption">Gender</p>
+					<div class="filter-units">
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterGender1" value="female">
+							<label class="form-check-label" for="leftFilterGender1">Female</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterGender2" value="male">
+							<label class="form-check-label" for="leftFilterGender2">male</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterGender3" value="none">
+							<label class="form-check-label" for="leftFilterGender2">I don't mind</label>
+						</div>
+					</div>
+					<p class="filter-caption">Lifestyle</p>
+					<div class="filter-units">
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterLifestyle1" value="1">
+							<label class="form-check-label" for="leftFilterLifestyle1">"Nerd"</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterLifestyle2" value="2">
+							<label class="form-check-label" for="leftFilterLifestyle2">Geek</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterLifestyle3" value="3">
+							<label class="form-check-label" for="leftFilterLifestyle3">Party Animal</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterLifestyle4" value="4">
+							<label class="form-check-label" for="leftFilterLifestyle4">Gourmet</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterLifestyle5" value="5">
+							<label class="form-check-label" for="leftFilterLifestyle5">Pro Gamer</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterLifestyle6" value="6">
+							<label class="form-check-label" for="leftFilterLifestyle6">Sports Fanatic</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterLifestyle0" value="0">
+							<label class="form-check-label" for="leftFilterLifestyle0">It doesn't matter</label>
+						</div>
+					</div>
+					<p class="filter-caption">Nationality</p>
+					<div class="filter-units">
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterNationality1" value="1">
+							<label class="form-check-label" for="leftFilterNationality1">Chinese</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterNationality2" value="0">
+							<label class="form-check-label" for="leftFilterNationality2">Non Chinese</label>
+						</div>
+					</div>
+					<p class="filter-caption">I wish my flatmates to be...</p>
+					<div class="filter-units">
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterMaritalStatus1" value="single">
+							<label class="form-check-label" for="leftFilterMaritalStatus1">Single</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterMaritalStatus2" value="inRelationship">
+							<label class="form-check-label" for="leftFilterMaritalStatus2">In a relationship</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterMaritalStatus3" value="married">
+							<label class="form-check-label" for="leftFilterMaritalStatus3">Married</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="checkbox" id="leftFilterMaritalStatus4" value="none">
+							<label class="form-check-label" for="leftFilterMaritalStatus4">Whatever</label>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-default button-left-form">Check This Out!</button>
+				</form>
+
+
+			</div>
+			<div class="col-md-9 clearfix">
+				<div class="body-display">
+					<ul>
+						<li>
+							<div class="col-md-3"></div>
+							<div class="col-md-6">asdadsadsad</div>
+							<div class="col-md-3">qeqweqweqweqweqw</div>
+						</li>
+						<li>
+							<div class="col-md-3">afsdfsdfsadfasfasdfsadf</div>
+							<div class="col-md-6">asdadsadsad</div>
+							<div class="col-md-3">qeqweqweqweqweqw</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
