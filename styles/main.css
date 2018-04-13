@@ -130,6 +130,74 @@
     margin-top: 10px;
 }
 
+.filter-left {
+
+}
+
+.main-item {
+    height: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e7e7e7;
+    margin-bottom: 10px;
+}
+
+
+.body-display {
+    margin-left: 10px;
+}
+
+.item-unit {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e7e7e7;
+    height: 200px;
+
+}
+
+.like-button {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-size: 30px;
+    color: #ff6666;
+}
+
+.item-ratings {
+    color: #fcce01;
+}
+
+.item-unit-second {
+    padding: 10px 10px 10px 20px;
+}
+.view-rooms {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.price-tag {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.price-tag > span {
+    display: block;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.price-tag > p {
+    display: block;
+    font-size: 35px;
+    margin-top: -7px;
+    margin-bottom: -7px;
+}
+
+
+
 /*.brand-logo {*/
     /*width: 60px;*/
     /*max-height: 100%;*/
